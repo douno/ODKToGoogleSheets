@@ -13,7 +13,7 @@ def read_json_file(filename):
 
 API_URL = 'https://westintelligence.com/v1/projects/2/forms/ANC_Visit.svc/Submissions'
 
-r = requests.get(API_URL, auth=('douno30@gmail.com', 'uj*HqQrnoks2'))
+r = requests.get(API_URL, auth=('YOUR_USERNAME', 'YOUR_PASSWORD'))
 if r.status_code == 200:
     data = r.json()['value']
     write_to_doc('./data.json', data)
